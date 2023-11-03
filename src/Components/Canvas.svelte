@@ -17,6 +17,7 @@
 	let props = [];
 	let width = 1280;
 	let height = 720
+
 	onMount(() => {
 		ctx = canvas.getContext("2d");
 		ctx.fillStyle = "white";
@@ -120,7 +121,6 @@
 		img.onload = () => {
 			const x = event.clientX - canvas.offsetLeft;
 			const y = event.clientY - canvas.offsetTop;
-			//
 			ctx.lineCap = "round";
 
 			ctx.strokeStyle = type === "pen" ? $color : "#fff";
